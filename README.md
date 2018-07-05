@@ -13,3 +13,4 @@ What you can do to the "split" element:
 - slide-x: Slides the images to the sides.
 - reveal: Show full images at the end.
 
+<a href="http://emrevera.com/css-image-split/" target="_blank">Download it here</a>
