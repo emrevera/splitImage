@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+
+		<!-- Noto Sans Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+
+		<!-- Cardo & Courgette Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cardo|Courgette" rel="stylesheet"> 
+
+		<!-- Fontawesome -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
+		<title>CSS Image split</title>
+	</head>
+	<body>
+		<div class="center">
+			<header>
+				<h1>CSS Image Split with content reveal</h1>
+				<p>This is a small custom gallery using CSS transitions to split images, it is responsive but for the moment it works best with a Square aspect ratio on the images. The reason for this is to be able to use the images as content on the HTML, and not having to deal with them as backgrounds. In the near future I will be adding the option to use the images in that way, but for right now, I hope you find this helpful.</p>
+				<p>All examples share the same structure, so you only need to focus on the class names that will change the effect, you'll find that next to each example.</p>
+				<p>What you can do to the "split" element:</p>
+				<ul>
+					<li>- <strong>masked:</strong> Masks the floating images.</li>
+					<li>- <strong>reverse:</strong> Reverses the direction of the animation.</li>
+					<li>- <strong>split-y:</strong> Makes the split Vertical.</li>
+					<li>- <strong>slide-x:</strong> Slides the images to the sides.</li>
+					<li>- <strong>reveal:</strong> Show full images at the end.</li>
+				</ul>
+				<a href="img/css-image-split.zip" target="_blank" class="btn"><span><i class="fas fa-download"></i></span> Download Examples</a>
+			</header>
+			<div class="sample">
+				<h2>Sample 01: using split &amp; masked</h2>
+				<div class="row">
+					<div class="split masked">
+						<div class="img"><img src="img/sample-01.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-01.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/4hk1zd8q/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h2>Sample 02: using split, split-y &amp; masked</h2>
+				<div class="row">
+					<div class="split split-y masked">
+						<div class="img"><img src="img/sample-02.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-02.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/udLjaw16/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h2>Sample 03: using split, split-y, reverse &amp; masked</h2>
+				<div class="row">
+					<div class="split split-y reverse masked">
+						<div class="img"><img src="img/sample-03.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-03.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/6L2qaw8g/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h2>Sample 04: using split &amp; slide-x</h2>
+				<div class="row">
+					<div class="split slide-x">
+						<div class="img"><img src="img/sample-04.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-04.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/bqgrfsy4/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h2>Sample 05: using split, slide-x &amp; reverse</h2>
+				<div class="row">
+					<div class="split slide-x reverse">
+						<div class="img"><img src="img/sample-05.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-05.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/qaeu2cmf/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h2>Sample 06: using split, slide-x &amp; masked</h2>
+				<div class="row">
+					<div class="split masked slide-x">
+						<div class="img"><img src="img/sample-06.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-06.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/adge41y5/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<div class="sample">
+				<h2>Sample 06: using split, slide-x &amp; reveal</h2>
+				<div class="row">
+					<div class="split slide-x reveal">
+						<div class="img"><img src="img/sample-07.jpg" alt=""></div>
+						<div class="content">
+							<h3>Lorem Ipsum</h3>
+							<p>"In in nibh a enim tincidunt aliquam sollicitudin et odio. Fusce pulvinar fermentum nisl, nec posuere urna viverra vitae. Sed cursus tortor ut quam varius, eu elementum erat congue."</p>
+						</div>
+						<div class="img"><img src="img/sample-07.jpg" alt=""></div>
+					</div>
+					<div class="embed">
+						<script async src="//jsfiddle.net/emrevera/9xova2m8/embed/html/"></script>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<h4><a href="http://www.emrevera.com" target="_blank">By Emre Vera</a></h4>
+			</footer>
+		</div>
+	</body>
+</html>
